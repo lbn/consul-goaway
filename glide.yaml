@@ -1,4 +1,4 @@
-package: github.com/lbn/consul-goaway
+package: consul-goaway
 import:
 - package: github.com/hashicorp/consul
   version: ^0.7.5
