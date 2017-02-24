@@ -1,7 +1,11 @@
-all: run
+NAME=consul-goaway
+ARCH=$(shell uname -m)
+VERSION=1.0.0
 
 build:
-	gb build
+	mkdir -p build/Linux && GOOS=linux go build -ldflags "-X main.Version=$(VERSION)" -o build/Linux/$(NAME)
 
-run: build
-	./bin/consul-goaway -consulAddr localhost:8500 -intervalS 60
+release: build
+	rm -rf release && mkdir release
+	cd build/Linux && tar -zcf ../../release/$(NAME)_$(VERSION)_linux_$(ARCH).tar.bz2 *
+	gh-release create lbn/$(NAME) $(VERSION)
