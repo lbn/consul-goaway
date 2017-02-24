@@ -1,5 +1,5 @@
-hash: aa7d12263fe2a5653328c2fdaf0cdf903aa368f3117eaf00b162e0eeb7a32965
-updated: 2017-02-24T15:05:38.314108527Z
+hash: 4ed1d31f9f0bd08e037cdf47627d793a9d4160384bf93198ffefcbda0adea62e
+updated: 2017-02-24T15:21:22.794927911Z
 imports:
 - name: github.com/hashicorp/consul
   version: 21f2d5ad0c02af6c4b32d8fd04f7c81e9b002d41
