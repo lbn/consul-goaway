@@ -23,7 +23,7 @@ _testmain.go
 *.test
 *.prof
 
-# gb
-/bin/
-/pkg
-/vendor/pkg
+# glide
+/vendor
+
+/consul-goaway
